@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Web Storage</title>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <script>
+            // Se comprueba que Web Storage está disponible
+            if (typeof(Storage) !== "undefined") {
+
+                // *******************************
+                // Prueba --- Almacén LOCAL
+                // *******************************
+                // Se escribe un valor en el almacén local
+                // Setter
+                // localStorage.setItem("pagesNavigated", "Buenas noches KeepCoders!");
+                
+                // Se recupera el valor del almacén local
+                // Getter
+                // let mensaje = localStorage.getItem("pagesNavigated");
+                
+                // *******************************
+                // Prueba --- Almacén sesión
+                // *******************************
+                // Se escribe un valor en el almacén sesión
+                sessionStorage.setItem("pagesNavigated", "Estamos en el curso Angular");
+
+                let mensaje = sessionStorage.getItem("pagesNavigated");
+                
+                
+                alert(mensaje);
+
+            } else {
+                console.log("No, no está soportado.");
+            }
+        </script>
+    </body>
+</html>
