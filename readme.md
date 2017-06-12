@@ -7,9 +7,10 @@
 ## **Sinopsis**
 Lista de ejemplos HTML5 y CSS3 básico de arranque para poner en situación
 
-01-mi-primer-html
-02-elementos-semanticos
-03-elementos-formulario
-04-audio-video
-05-geolocalizacion
-06-webstorage
+⋅⋅* 01-mi-primer-html
+⋅⋅* 02-elementos-semanticos
+⋅⋅* 03-elementos-formulario
+⋅⋅* 04-audio-video
+⋅⋅* 05-geolocalizacion
+⋅⋅* 06-webstorage
+⋅⋅* 07-web-workers

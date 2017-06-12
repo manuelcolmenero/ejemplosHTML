@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Web Workers</title>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <h1 id="superNumero"></h1>
+        <script>
+            
+            // Se obtiene referencia al elemento <h1>
+            let header1 =document.getElementById("superNumero");
+
+            // Se comprueba que Web Workers está disponible
+            if (typeof(Worker) !== "undefined") {
+                
+                // Ejecuta el script indicado
+                const worker = new Worker ("07b-web-workers.js");
+
+                // Se atienden las notificaciones que se envían desde la tarea que se ejecuta en segundo plano
+                worker.onmessage = (datos) => {
+
+                    header1.innerText =datos.data;
+
+                    // Se termina el worker cuando la cuenta atras llegue a 0
+                    if (datos.data === 0 ){
+                        worker.terminate();
+                    }
+                };
+
+
+            } else {
+                console.log("No, no está soportado.");
+            }
+        </script>
+    </body>
+</html>
