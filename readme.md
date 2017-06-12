@@ -14,3 +14,4 @@ Lista de ejemplos HTML5 y CSS3 básico de arranque para poner en situación
 * 05-geolocalizacion
 * 06-webstorage
 * 07-web-workers
+* 08-selectores
