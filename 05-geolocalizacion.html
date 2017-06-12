@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Geolocalización</title>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <script>
+            // Se comprueba que la API de Geolocalización está disponible
+            if (navigator.geolocation) {
+                // Se obtiene la posición del usuario
+                navigator.geolocation.getCurrentPosition(
+                    // Si todo ha ido correctamente
+                    (datos) => {
+                        console.log("latitud: " + datos.coords.latitude
+                        + " - longitud: " + datos.coords.longitude)
+                    },
+                    (error) => {
+                        console.error("Algo fue mal.");
+                    }
+                );
+            } else {
+                console.error("No, no está soportado.");
+            }
+        </script>
+    </body>
+</html>
