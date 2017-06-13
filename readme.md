@@ -18,3 +18,4 @@ Lista de ejemplos HTML5 y CSS3 básico de arranque para poner en situación
 * 09-degradados
 * 10-sombras
 * 11-tipografias-personalizadas
+* 12-animaciones
